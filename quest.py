@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 XP_PER_LEVEL = 10
+HEAVY = {11}  # quests that build containers: only checked when you play that day
 
 GREEN, RED, GOLD, DIM, BOLD, END = ("\033[32m", "\033[31m", "\033[33m", "\033[2m", "\033[1m", "\033[0m") if sys.stdout.isatty() else ("",) * 6
 
@@ -39,6 +40,34 @@ QUESTS = {
         ("5.1", "Catch bug 1"),
         ("5.2", "Catch bug 2"),
         ("5.3", "Catch bug 3"),
+    ]),
+    9: ("The job API", "quests/day09/jobs_api.py", [
+        ("9.1", "List jobs, get one, 404 when it's missing"),
+        ("9.2", "Create a job: validation and 201"),
+        ("9.3", "Filter with a query parameter"),
+        ("9.4", "Delete with 204"),
+    ]),
+    10: ("Invoice detective", "quests/day10/detective.py", [
+        ("10.1", "Pull the text out of a PDF"),
+        ("10.2", "Find the total, not the subtotal"),
+        ("10.3", "Read the line-items table"),
+        ("10.4", "Spot the scan"),
+    ]),
+    11: ("Ship it in a box", "quests/day11/Dockerfile", [
+        ("11.1", "The Dockerfile builds"),
+        ("11.2", "compose.yaml has the api and the database"),
+        ("11.3", "The whole stack starts healthy"),
+    ]),
+    12: ("Agent on a leash", "quests/day12/textstats.py", [
+        ("12.1", "The agent wrote a plan first"),
+        ("12.2", "The tests pass"),
+        ("12.3", "Tests untouched, work in small commits"),
+    ]),
+    14: ("Trust but verify", "quests/day14/verify.py", [
+        ("14.1", "A schema for invoices"),
+        ("14.2", "Parse replies, reject the broken ones"),
+        ("14.3", "Check the maths in plain Python"),
+        ("14.4", "Accept or send to review"),
     ]),
 }
 
@@ -77,7 +106,7 @@ def check(day: int) -> list[tuple[str, str, bool, str]]:
     res = run_pytest(folder)
     out = []
     for level, what in levels:
-        mine = {k: v for k, v in res.items() if k.startswith("test_" + level.replace(".", "_"))}
+        mine = {k: v for k, v in res.items() if k.startswith("test_" + level.replace(".", "_") + "_")}
         ok = bool(mine) and all(p for p, _ in mine.values())
         why = next((m for p, m in mine.values() if not p), "")
         out.append((level, what, ok, why))
@@ -112,7 +141,11 @@ def play(day: int) -> None:
 def overview() -> None:
     print(f"\n{BOLD}Rynovi quests{END}\n")
     total = xp = 0
-    for day, (name, _, _) in QUESTS.items():
+    for day, (name, _, levels) in QUESTS.items():
+        if day in HEAVY:
+            print(f"    Day {day:>2}  {name:<24} {DIM}check it with python quest.py {day}{END}")
+            total += len(levels)
+            continue
         results = check(day)
         done = sum(ok for *_, ok, _ in results)
         total += len(results)

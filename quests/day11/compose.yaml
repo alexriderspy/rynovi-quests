@@ -1,0 +1,12 @@
+# Day 11 · Ship it in a box
+#
+# TODO 11.2 · Describe two services:
+#   api: build from this folder (build: .), publish port 8000:8000, and set the environment variable
+#        DATABASE_URL=postgresql://postgres:rynovi@db:5432/postgres
+#        It should wait for the database: depends_on db.
+#   db:  image postgres:16, with POSTGRES_PASSWORD=rynovi
+#
+# TODO 11.3 · Make it start cleanly: python quest.py 11 runs `docker compose up`, calls
+#   http://localhost:8000/health and expects {"api": "ok", "db": "ok"}.
+#   Hint: Postgres takes a few seconds to wake up. Give db a healthcheck
+#   (pg_isready -U postgres) and make api depend on it with condition: service_healthy.
