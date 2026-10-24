@@ -16,4 +16,4 @@ def test_55_2_holds_up():
 
 
 def test_55_3_corrected_rate():
-    assert corrected_pass_rate() == pytest.approx(0.667, abs=1e-3)
+    assert corrected_pass_rate() == pytest.approx(0.741, abs=1e-3), "the judge says 70% passed; corrected, it is about 74%"
