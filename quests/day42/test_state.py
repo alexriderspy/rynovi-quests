@@ -25,7 +25,7 @@ def test_42_2_trim_keeps_system_and_recent():
     assert out[0] == CHAT[0]
     assert out[-1] == CHAT[-1]
     assert sum(tokens(m) for m in out) <= 20
-    assert out == [CHAT[0], CHAT[3], CHAT[4], CHAT[5]]
+    assert out == [CHAT[0], CHAT[4], CHAT[5]], "the 8-word message before them would go over 20"
 
 
 def test_42_2_whole_history_when_it_fits():

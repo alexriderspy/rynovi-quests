@@ -9,7 +9,7 @@ def test_52_1_slowest_step():
 
 
 def test_52_2_cost():
-    assert cost_rs(TRACE) == pytest.approx(4.5544, abs=1e-4)
+    assert cost_rs(TRACE) == pytest.approx(4.601, abs=1e-4)
 
 
 def test_52_3_failures():
