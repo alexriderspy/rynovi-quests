@@ -1,0 +1,4 @@
+2026-10-20 10:02:11 INFO request from user u-102 for order ORD-1042
+2026-10-20 10:02:12 INFO calling refund tool for riya.sharma@example.com
+2026-10-20 10:02:13 WARN retry 1 for order ORD-1042
+2026-10-20 10:05:40 INFO customer phone +91 9876543210 verified

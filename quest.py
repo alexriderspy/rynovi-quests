@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 XP_PER_LEVEL = 10
-HEAVY = {11}  # quests that build containers: only checked when you play that day
+HEAVY = {11, 60}  # slow quests (containers, timeouts): only checked when you play that day
 
 GREEN, RED, GOLD, DIM, BOLD, END = ("\033[32m", "\033[31m", "\033[33m", "\033[2m", "\033[1m", "\033[0m") if sys.stdout.isatty() else ("",) * 6
 
@@ -133,6 +133,21 @@ QUESTS = {
     50: ("Rails", "quests/day50/rails.py", [("50.1", "Redact Aadhaar, PAN, phone, email"), ("50.2", "Step and cost limits"), ("50.3", "Check drafts before they're sent")]),
     51: ("Least privilege", "quests/day51/privilege.py", [("51.1", "Tool allow-list"), ("51.2", "Folder sandbox"), ("51.3", "Spot the lethal trifecta")]),
     52: ("Read the trace", "quests/day52/read_trace.py", [("52.1", "The slowest step"), ("52.2", "Cost per run"), ("52.3", "What broke, and where")]),
+    53: ("Open coding", "quests/day53/open_coding.py", [("53.1", "Count failures by category"), ("53.2", "Where to focus"), ("53.3", "Real examples for the team")]),
+    54: ("Grow the set", "quests/day54/grow.py", [("54.1", "Normalise inputs"), ("54.2", "Add new cases, skip duplicates"), ("54.3", "Version the set")]),
+    55: ("Calibrate the judge", "quests/day55/calibrate.py", [("55.1", "TPR and TNR"), ("55.2", "Does it hold up on test?"), ("55.3", "Correct the production pass rate")]),
+    56: ("Score the trajectory", "quests/day56/trajectory.py", [("56.1", "Task success"), ("56.2", "Right tools, right order"), ("56.3", "Wasted steps and a report")]),
+    57: ("Cheap checks first", "quests/day57/checks.py", [("57.1", "Code checks"), ("57.2", "Route to the judge"), ("57.3", "Money saved")]),
+    58: ("Regression gate", "quests/day58/gate.py", [("58.1", "Find the drops"), ("58.2", "A CI command that fails the build"), ("58.3", "Move the baseline forward")]),
+    60: ("Stream it", "quests/day60/app.py", [("60.1", "Health check"), ("60.2", "Stream tokens as server-sent events"), ("60.3", "Time out slow requests")]),
+    63: ("Cost dashboard", "quests/day63/dashboard.py", [("63.1", "p50 and p95 latency"), ("63.2", "Cost per task"), ("63.3", "The costliest step")]),
+    64: ("Gateway", "quests/day64/gateway.py", [("64.1", "Fall back when a model fails"), ("64.2", "Cache repeat questions"), ("64.3", "Load test it")]),
+    67: ("Who sees what", "quests/day67/access.py", [("67.1", "Can this user read it?"), ("67.2", "Filter before ranking"), ("67.3", "Audit log")]),
+    68: ("Connector", "quests/day68/connector.py", [("68.1", "Every page"), ("68.2", "Respect the rate limit"), ("68.3", "Index with permissions")]),
+    69: ("Fresh index", "quests/day69/sync.py", [("69.1", "Content hashes"), ("69.2", "Plan the sync"), ("69.3", "Embed only what changed")]),
+    70: ("Change data capture", "quests/day70/cdc.py", [("70.1", "Apply one change"), ("70.2", "Replay safely"), ("70.3", "Resume after a crash")]),
+    71: ("Where does data go", "quests/day71/scan.py", [("71.1", "Spot personal data"), ("71.2", "Scan a project"), ("71.3", "Clean it up")]),
+    73: ("No leaks", "quests/day73/leaks.py", [("73.1", "Find images and links"), ("73.2", "Spot exfiltration and secrets"), ("73.3", "Make it safe to render")]),
 }
 
 

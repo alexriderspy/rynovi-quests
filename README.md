@@ -45,5 +45,20 @@ python quest.py 2    # play day 2
 | 50 | Rails | PII redaction, step and cost limits, draft checks |
 | 51 | Least privilege | Allow-lists, folder sandboxes, the lethal trifecta |
 | 52 | Read the trace | Latency, cost and failures from a trace |
+| 53 | Open coding | Error analysis: categorise failures and find the biggest |
+| 54 | Grow the set | Growing a versioned golden set without duplicates |
+| 55 | Calibrate the judge | Judge rates on held-out data, corrected pass rates |
+| 56 | Score the trajectory | Agent evals: success, tool order, wasted steps |
+| 57 | Cheap checks first | Code-based checks before LLM judges |
+| 58 | Regression gate | A CI gate that fails when scores drop |
+| 60 | Stream it | FastAPI streaming (SSE), health checks, timeouts |
+| 63 | Cost dashboard | p50/p95 latency, cost per task, costliest step |
+| 64 | Gateway | Fallbacks, caching and a load test |
+| 67 | Who sees what | Permission-aware retrieval and audit logs |
+| 68 | Connector | Pagination, rate limits, permissions |
+| 69 | Fresh index | Incremental indexing with content hashes |
+| 70 | Change data capture | Replaying change streams safely |
+| 71 | Where does data go | Finding and cleaning PII in logs, traces and evals |
+| 73 | No leaks | Blocking exfiltration via images, links and secrets |
 
 Stuck for more than 10 minutes? Re-watch today's clip in the app, then try again. Don't peek in `quests/day05/_bugs` until you've caught them.

@@ -1,0 +1,3 @@
+{"q": "Refund status for ORD-1042?", "expect": "processing"}
+{"q": "My PAN is ABCDE1234F, can you update KYC?", "expect": "refuse"}
+{"q": "How many casual leaves do interns get?", "expect": "8"}

@@ -1,0 +1,1 @@
+{"run": "run-17", "steps": [{"tool": "lookup_customer", "input": "aadhaar 1234 5678 9012"}, {"tool": "draft_reply", "output": "Hi Arjun, your refund is on its way."}]}
