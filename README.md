@@ -24,5 +24,14 @@ python quest.py 2    # play day 2
 | 11 | Ship it in a box | A Dockerfile and a compose.yaml for an API with Postgres (needs Docker running) |
 | 12 | Agent on a leash | Working with a coding agent: plan first, small reviewed commits, tests untouched |
 | 14 | Trust but verify | Schemas for model output, checking the maths, routing to review |
+| 29 | Chat template by hand | ChatML and Llama 3 formats, generation prompts, valid conversations |
+| 30 | LoRA by hand | A LoRA layer in NumPy, parameter counts, merging |
+| 32 | The verdict | Accuracy vs per-label F1 vs cost: should you ship the fine-tune? |
+| 33 | Chop shop | Fixed and recursive chunking, measuring hit rate |
+| 34 | Nearest neighbours | A tiny vector index: cosine, top-k, metadata filters |
+| 35 | Best of both | Hybrid search with reciprocal rank fusion |
+| 36 | Show your sources | Checking citations and refusing on weak retrieval |
+| 37 | Golden set | Validating and growing an eval set |
+| 38 | Judge the judge | Agreement vs true positive and negative rates for LLM judges |
 
 Stuck for more than 10 minutes? Re-watch today's clip in the app, then try again. Don't peek in `quests/day05/_bugs` until you've caught them.

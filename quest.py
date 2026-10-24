@@ -69,6 +69,58 @@ QUESTS = {
         ("14.3", "Check the maths in plain Python"),
         ("14.4", "Accept or send to review"),
     ]),
+    29: ("Chat template by hand", "quests/day29/templates.py", [
+        ("29.1", "ChatML format"),
+        ("29.2", "The generation prompt"),
+        ("29.3", "Llama 3 format"),
+        ("29.4", "Catch malformed conversations"),
+    ]),
+    30: ("LoRA by hand", "quests/day30/lora.py", [
+        ("30.1", "Count what LoRA trains"),
+        ("30.2", "A LoRA layer that starts as a no-op"),
+        ("30.3", "Merge the update into one matrix"),
+        ("30.4", "The budget for a 1B model"),
+    ]),
+    32: ("The verdict", "quests/day32/verdict.py", [
+        ("32.1", "Accuracy"),
+        ("32.2", "F1 for each label"),
+        ("32.3", "Macro F1"),
+        ("32.4", "Pick the model to ship"),
+    ]),
+    33: ("Chop shop", "quests/day33/chop.py", [
+        ("33.1", "Fixed-size chunks with overlap"),
+        ("33.2", "Recursive chunks on paragraphs and sentences"),
+        ("33.3", "Keyword search over chunks"),
+        ("33.4", "Measure hit rate for both"),
+    ]),
+    34: ("Nearest neighbours", "quests/day34/index.py", [
+        ("34.1", "Cosine similarity"),
+        ("34.2", "Add and search a vector index"),
+        ("34.3", "Metadata filters"),
+        ("34.4", "Delete"),
+    ]),
+    35: ("Best of both", "quests/day35/fusion.py", [
+        ("35.1", "Reciprocal rank fusion"),
+        ("35.2", "Hit rate at k"),
+        ("35.3", "Hybrid beats both"),
+    ]),
+    36: ("Show your sources", "quests/day36/sources.py", [
+        ("36.1", "Find the citations"),
+        ("36.2", "Catch fake and missing citations"),
+        ("36.3", "Refuse on weak retrieval"),
+        ("36.4", "What users actually see"),
+    ]),
+    37: ("Golden set", "quests/day37/golden.py", [
+        ("37.1", "A schema and a loader for test cases"),
+        ("37.2", "Coverage and gaps"),
+        ("37.3", "Grow golden.jsonl until it's good enough"),
+    ]),
+    38: ("Judge the judge", "quests/day38/judge.py", [
+        ("38.1", "Confusion counts"),
+        ("38.2", "Agreement"),
+        ("38.3", "True positive and negative rates"),
+        ("38.4", "Pick the judge"),
+    ]),
 }
 
 

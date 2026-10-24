@@ -1,0 +1,36 @@
+"""30 RAG answers: your own pass/fail label, and what two LLM judges said. Don't edit this file.
+
+judge_v1 used the prompt "Is this answer good?"; judge_v2 used your written pass/fail criteria with examples."""
+
+LABELS = [
+    {'id': 1, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 2, 'human': 'fail', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 3, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 4, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 5, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 6, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 7, 'human': 'fail', 'judge_v1': 'fail', 'judge_v2': 'pass'},
+    {'id': 8, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 9, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 10, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 11, 'human': 'fail', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 12, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 13, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 14, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 15, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 16, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 17, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 18, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 19, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 20, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 21, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 22, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 23, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 24, 'human': 'fail', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 25, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 26, 'human': 'fail', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 27, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 28, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'fail'},
+    {'id': 29, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+    {'id': 30, 'human': 'pass', 'judge_v1': 'pass', 'judge_v2': 'pass'},
+]

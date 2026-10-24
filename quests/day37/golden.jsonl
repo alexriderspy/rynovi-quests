@@ -1,0 +1,8 @@
+{"question": "How many casual leaves do interns get?", "category": "leave", "expect": "answer", "must_include": ["8"], "source": "Leave policy"}
+{"question": "Do unused leave days carry over to next year?", "category": "leave", "expect": "answer", "must_include": ["5 days"], "source": "Leave policy"}
+{"question": "Which days can I work from home?", "category": "wfh", "expect": "answer", "must_include": ["Monday", "Friday"], "source": "Work from home"}
+{"question": "What is the hotel limit in metro cities?", "category": "expenses", "expect": "answer", "must_include": ["6,000"], "source": "Expenses"}
+{"question": "How long do I have to submit an expense claim?", "category": "expenses", "expect": "answer", "must_include": ["30 days"], "source": "Expenses"}
+{"question": "What is the yearly learning budget?", "category": "learning", "expect": "answer", "must_include": ["50,000"], "source": "Learning"}
+{"question": "Can I use public Wi-Fi to open internal tools?", "category": "security", "expect": "answer", "must_include": ["VPN"], "source": "Work from home"}
+{"question": "What is the CEO's salary?", "category": "out_of_scope", "expect": "refuse", "must_include": [], "source": null}

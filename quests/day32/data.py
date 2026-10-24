@@ -1,0 +1,43 @@
+"""36 of the newest GitHub issues: the true label and what each model said. Don't edit this file."""
+
+ISSUES = [
+    {'title': 'App crashes on login', 'label': 'question', 'baseline': 'question', 'base': 'question', 'finetune': 'question'},
+    {'title': 'Add dark mode', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'How do I export CSV?', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Upload fails for PNG over 5MB', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Support SSO with Okta', 'label': 'question', 'baseline': 'question', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Is there an API rate limit?', 'label': 'question', 'baseline': 'bug', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Search returns nothing for Hindi text', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Allow bulk delete', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Why is my invoice total different?', 'label': 'feature', 'baseline': 'feature', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Memory leak after 1 hour', 'label': 'bug', 'baseline': 'bug', 'base': 'question', 'finetune': 'bug'},
+    {'title': 'Add keyboard shortcuts', 'label': 'question', 'baseline': 'question', 'base': 'question', 'finetune': 'question'},
+    {'title': 'Can I self-host this?', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': '500 error on /settings', 'label': 'question', 'baseline': 'question', 'base': 'question', 'finetune': 'question'},
+    {'title': 'Export to Google Sheets', 'label': 'feature', 'baseline': 'feature', 'base': 'bug', 'finetune': 'feature'},
+    {'title': "What does 'pending' status mean?", 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Date picker shows wrong timezone', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Add webhooks for new orders', 'label': 'question', 'baseline': 'question', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'How to reset my API key?', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': "Images don't load on Safari", 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Add Tamil translation', 'label': 'question', 'baseline': 'question', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Do you support Python 3.13?', 'label': 'bug', 'baseline': 'bug', 'base': 'question', 'finetune': 'bug'},
+    {'title': 'Sorting by price is reversed', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Slack integration', 'label': 'question', 'baseline': 'feature', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Where are my logs stored?', 'label': 'bug', 'baseline': 'bug', 'base': 'feature', 'finetune': 'bug'},
+    {'title': "Logout doesn't clear session", 'label': 'feature', 'baseline': 'bug', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Add 2FA', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'How do I invite teammates?', 'label': 'feature', 'baseline': 'feature', 'base': 'bug', 'finetune': 'feature'},
+    {'title': 'PDF parser drops tables', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Custom domains', 'label': 'question', 'baseline': 'feature', 'base': 'bug', 'finetune': 'question'},
+    {'title': 'Can I change my username?', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Notifications sent twice', 'label': 'question', 'baseline': 'feature', 'base': 'question', 'finetune': 'question'},
+    {'title': 'Add a public status page', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'How to cancel my plan?', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'Crash when field is empty', 'label': 'feature', 'baseline': 'feature', 'base': 'feature', 'finetune': 'feature'},
+    {'title': 'Dark mode for emails', 'label': 'bug', 'baseline': 'bug', 'base': 'bug', 'finetune': 'bug'},
+    {'title': 'What is the refund policy?', 'label': 'feature', 'baseline': 'feature', 'base': 'bug', 'finetune': 'question'},
+]
+
+# Rupees per 1,000 issues labelled, all costs included.
+COST_PER_1K = {"baseline": 2.0, "base": 180.0, "finetune": 25.0}
