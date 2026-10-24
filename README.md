@@ -33,5 +33,17 @@ python quest.py 2    # play day 2
 | 36 | Show your sources | Checking citations and refusing on weak retrieval |
 | 37 | Golden set | Validating and growing an eval set |
 | 38 | Judge the judge | Agreement vs true positive and negative rates for LLM judges |
+| 40 | The loop | The agent loop: tool calls, results, step limits |
+| 41 | Tool doctor | Tool schemas, argument validation, actionable errors |
+| 42 | State vs memory | Structured state and trimming history to a budget |
+| 43 | Remember me | Long-term memory: save, recall, replace, forget |
+| 44 | Graph it | LangGraph: nodes, conditional edges, checkpoints |
+| 46 | Build an MCP server | Tools and resources with the MCP Python SDK |
+| 47 | Plug in | An MCP client over stdio, tools handed to a model |
+| 48 | Context budget | Trimming and summarising long runs |
+| 49 | Approval gate | Human-in-the-loop with resumable checkpoints |
+| 50 | Rails | PII redaction, step and cost limits, draft checks |
+| 51 | Least privilege | Allow-lists, folder sandboxes, the lethal trifecta |
+| 52 | Read the trace | Latency, cost and failures from a trace |
 
 Stuck for more than 10 minutes? Re-watch today's clip in the app, then try again. Don't peek in `quests/day05/_bugs` until you've caught them.

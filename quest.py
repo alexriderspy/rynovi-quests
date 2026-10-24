@@ -121,6 +121,18 @@ QUESTS = {
         ("38.3", "True positive and negative rates"),
         ("38.4", "Pick the judge"),
     ]),
+    40: ("The loop", "quests/day40/loop.py", [("40.1", "Run a tool without crashing"), ("40.2", "The agent loop"), ("40.3", "A step limit")]),
+    41: ("Tool doctor", "quests/day41/tools.py", [("41.1", "A good tool definition"), ("41.2", "Validate the model's arguments"), ("41.3", "Errors the model can act on")]),
+    42: ("State vs memory", "quests/day42/state.py", [("42.1", "Structured state"), ("42.2", "Trim history to a budget"), ("42.3", "State survives trimming")]),
+    43: ("Remember me", "quests/day43/memory.py", [("43.1", "Remember, replace, forget"), ("43.2", "Recall what's relevant"), ("43.3", "Extract facts from messages")]),
+    44: ("Graph it", "quests/day44/graph.py", [("44.1", "The nodes"), ("44.2", "Wire the graph with a conditional edge"), ("44.3", "Pause and resume from a checkpoint")]),
+    46: ("Build an MCP server", "quests/day46/server.py", [("46.1", "A read tool"), ("46.2", "A write tool with an enum"), ("46.3", "A resource")]),
+    47: ("Plug in", "quests/day47/client.py", [("47.1", "Discover a server's tools"), ("47.2", "Call them"), ("47.3", "Hand them to a model")]),
+    48: ("Context budget", "quests/day48/context.py", [("48.1", "Pinned, old and recent"), ("48.2", "Compress with a summary"), ("48.3", "30 steps under budget")]),
+    49: ("Approval gate", "quests/day49/approvals.py", [("49.1", "What needs a person"), ("49.2", "Pause at risky calls"), ("49.3", "Approve, edit, reject, resume")]),
+    50: ("Rails", "quests/day50/rails.py", [("50.1", "Redact Aadhaar, PAN, phone, email"), ("50.2", "Step and cost limits"), ("50.3", "Check drafts before they're sent")]),
+    51: ("Least privilege", "quests/day51/privilege.py", [("51.1", "Tool allow-list"), ("51.2", "Folder sandbox"), ("51.3", "Spot the lethal trifecta")]),
+    52: ("Read the trace", "quests/day52/read_trace.py", [("52.1", "The slowest step"), ("52.2", "Cost per run"), ("52.3", "What broke, and where")]),
 }
 
 
