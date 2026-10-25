@@ -22,7 +22,7 @@ python quest.py 2    # play day 2
 | 9 | The job API | FastAPI endpoints, status codes, validation, query parameters |
 | 10 | Invoice detective | Reading text and tables from PDFs, spotting scans |
 | 11 | Ship it in a box | A Dockerfile and a compose.yaml for an API with Postgres (needs Docker running) |
-| 12 | Agent on a leash | Working with a coding agent: plan first, small reviewed commits, tests untouched |
+| 12 | Agent on a leash | Working with a coding agent: plan first, small reviewed commits, tests untouched. Free local setup: [local-coding-agent](https://github.com/alexriderspy/local-coding-agent) |
 | 14 | Trust but verify | Schemas for model output, checking the maths, routing to review |
 | 29 | Chat template by hand | ChatML and Llama 3 formats, generation prompts, valid conversations |
 | 30 | LoRA by hand | A LoRA layer in NumPy, parameter counts, merging |

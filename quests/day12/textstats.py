@@ -7,6 +7,8 @@ Don't write this yourself: get your coding agent (Claude Code, Cursor, Copilot..
   3. Read every diff, and commit in at least two small steps (git commit), not one big dump.
 
 Run `python quest.py 12` to check all three.
+
+No paid agent? Run Claude Code free on your laptop: https://github.com/alexriderspy/local-coding-agent
 """
 
 
