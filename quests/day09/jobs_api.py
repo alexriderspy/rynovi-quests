@@ -32,6 +32,9 @@ class JobIn(BaseModel):
     #   title: str with at least 2 characters (Field(min_length=2))
     #   company: str
     #   salary_lpa: float or None, default None, can't be negative
+    title: str = Field(min_length=2)
+    company: str
+    salary_lpa: float | None = Field(default=None, ge=0)
     pass
 
 
@@ -39,6 +42,40 @@ class JobIn(BaseModel):
 #   GET /jobs           -> a list of every job, each as {"id": ..., "title": ..., "company": ..., "salary_lpa": ...}
 #   GET /jobs/{job_id}  -> that one job, same shape. If it doesn't exist: 404 with detail "job not found"
 #                          (raise HTTPException(status_code=404, detail="job not found"))
+
+@app.get("/jobs")
+def list_jobs(min_salary: float | None = None):
+    result = []
+
+    for job_id, job in JOBS.items():
+        salary = job["salary_lpa"]
+
+        if min_salary is not None:
+            if salary is None or salary < min_salary:
+                continue
+
+        result.append({"id": job_id, **job})
+
+    return result
+# 
+# @app.get("/jobs")
+# def list_jobs():
+    # return [
+        # {"id": job_id, **job}
+        # for job_id, job in JOBS.items()
+    # ]
+# 
+@app.get("/jobs/{job_id}")
+def list_jobs(job_id: int):
+    job = JOBS.get(job_id)
+
+    if job is None:
+        raise HTTPException(
+            status_code=404,
+            detail="job not found"
+        )
+
+    return {"id": job_id, **job}
 
 # TODO 9.2 · POST /jobs takes a JobIn, stores it with the next id (biggest id + 1),
 #            and returns the new job (with its id) and status code 201.
@@ -48,3 +85,21 @@ class JobIn(BaseModel):
 
 # TODO 9.4 · DELETE /jobs/{job_id} removes the job and returns status 204 with no body.
 #            Deleting a job that doesn't exist gives 404 "job not found".
+@app.post("/jobs", status_code=201)
+def create_job(job: JobIn):
+    job_id = max(JOBS.keys(), default=0) + 1
+
+    JOBS[job_id] = job.model_dump()
+
+    return {
+        "id": job_id,
+        **JOBS[job_id]
+    }
+
+@app.delete("/jobs/{job_id}", status_code=204)
+def delete_job(job_id: int):
+    if job_id not in JOBS:
+        raise HTTPException(status_code=404, detail="job not found")
+
+    del JOBS[job_id]
+    return Response(status_code=204)
